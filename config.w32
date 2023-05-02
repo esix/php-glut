@@ -1,0 +1,7 @@
+ARG_ENABLE('glut', 'glut support', 'no');
+
+if (PHP_GLUT != 'no') {
+	AC_DEFINE('HAVE_GLUT', 1, 'glut support enabled');
+
+	EXTENSION('glut', 'glut.c', null, '/DZEND_ENABLE_STATIC_TSRMLS_CACHE=1');
+}
