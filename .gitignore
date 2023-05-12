@@ -40,3 +40,5 @@ tests/**/*.db
 tests/**/*.mem
 tmp-php.ini
 glut.dep
+config.h.in~
+configure~
